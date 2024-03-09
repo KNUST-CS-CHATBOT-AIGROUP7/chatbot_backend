@@ -1,0 +1,74 @@
+{
+    "intents": [
+        {
+            "tag": "greetings",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey",
+                "whats up",
+                "sup",
+                "good day",
+                "good morning",
+                "good afternoon",
+                "good evening",
+                "greetings"
+            ],
+            "responses": [
+                "Hello! How can I assist you today?",
+                "Hi there! How can I help you?",
+                "Welcome. What can I do for you?",
+                "Greetings! How may I assist you?",
+                "Hey! What can I do for you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "Goodbye",
+                "See you later",
+                "Take care",
+                "Goodbye for now",
+                "Bye bye",
+                "Goodbye! Have a great day!"
+            ],
+            "responses": [
+                "Goodbye! Have a great day!",
+                "Goodbye! Take care!",
+                "Goodbye! See you later!",
+                "Goodbye! Have a great day!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thank you very much",
+                "Thanks for the help",
+                "Thank you for the help",
+                "Thank you for the assistance",
+                "Thank you for the support",
+                "Thank you for the information",
+                "Thank you for the guidance",
+                "Thank you for the advice",
+                "Thank you for the support",
+                "Thank you for the help",
+                "Thank you for the assistance",
+                "Thank you for the support",
+                "Thank you for the information",
+                "Thank you for the guidance",
+                "Thank you for the advice"
+            ],
+            "responses": [
+                "You're welcome!",
+                "You're welcome! Happy to help!",
+                "You're welcome! I'm happy to help!",
+                "You're welcome! I'm glad I could help!",
+                "You're welcome! I'm happy to help!"
+            ]
+        }
+    ]
+}
