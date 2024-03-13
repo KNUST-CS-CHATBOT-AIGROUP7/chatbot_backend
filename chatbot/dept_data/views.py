@@ -20,14 +20,12 @@ try:
 except FileNotFoundError:
     print("File not found")
 
-words = pickle.load(open('words.pkl', 'rb'))
-classes = pickle.load(open('classes.pkl', 'rb'))
-model = load_model('chatbot_model.h5')
+words = pickle.load(open('https://github.com/KNUST-CS-CHATBOT-AIGROUP7/chatbot_backend/blob/dev/chatbot/dept_data/words.pkl', 'rb'))
+classes = pickle.load(open('https://github.com/KNUST-CS-CHATBOT-AIGROUP7/chatbot_backend/blob/dev/chatbot/dept_data/classes.pkl', 'rb'))
+model = load_model('https://github.com/KNUST-CS-CHATBOT-AIGROUP7/chatbot_backend/blob/dev/chatbot/dept_data/chatbot_model.keras')
 
 
 # Create your views here.
-
-
 class Files():
     def clean_up_sentence(sentence):
         sentence_words = nltk.word_tokenize(sentence)
@@ -90,5 +88,3 @@ class Chatbot(APIView):
 #            ints= Files().predict_class(data)
 #            res = get_response(ints,intents)
 #            return HttpResponse(json.dumps(data))
-      
-#        pass
