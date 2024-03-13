@@ -6,6 +6,7 @@ import pickle
 import numpy as np
 import nltk
 import random
+from django.shortcuts import redirect
 
 from nltk.stem import WordNetLemmatizer
 from keras.models import load_model
@@ -58,40 +59,31 @@ class Files:
         return return_list
 
     def get_response(self, intents_list, intents_json):
-        tag = intents_list[0]['intent']
-        list_of_intents = intents_json['intents']
-        for i in list_of_intents:
-            if i['tag'] == tag:
-                result = random.choice (i['responses'])
-                break
-        return result
-
+        if intents_list:
+            tag = intents_list[0]['intent']
+            list_of_intents = intents_json['intents']
+            for i in list_of_intents:
+                if i['tag'] == tag:
+                    result = random.choice (i['responses'])
+                    break
+            return result
+        else:
+            return "I'm sorry, I do not understand that"
 class Chatbot(APIView):
        def __init__(self):
            super().__init__()
            self.files = Files() # create an instance of the Files class to use its methods
 
+       def get(self, request):
+           
+           return redirect("")
+
        def post(self, request):
            data = request.data["user"]
+           while data.replace(" ","") == "":
+               continue
            print(data)
            ints = self.files.predict_class(data)
            res = self.files.get_response (ints, intents)
            return HttpResponse(res)
-        #    return HttpResponse(json.dumps(data))
-       
-
-
-
-# class Files():
-#     def main(self):
-#         return "Hello, world. You're at the dept_data index."
-#     def get_response(intents_list, intents_json):
-#          pass
-#     def predict_class(self, sentence):
-#         pass
-# class Chatbot(APIView):
-#        def post(self, request, *args, **kwargs):
-#            data = request.data
-#            ints= Files().predict_class(data)
-#            res = get_response(ints,intents)
-#            return HttpResponse(json.dumps(data))
+        #    return HttResponse(json.dumps(data))

@@ -2,7 +2,7 @@
     "intents": [
         {
             "tag": "greetings",
-            "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "bonjour"],
+            "patterns": ["Hi there", "hi", "How are you", "Is anyone there?","Hey","Hola", "Hello", "bonjour"],
             "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"]
         },
         {
@@ -17,7 +17,7 @@
         },
         {
             "tag": "about",
-            "patterns": ["Who are you?", "What are you?", "Who you are?", "What is this bot?", "Which bot is this?"],
+            "patterns": ["What are you?", "Who you are?", "What is this bot?", "Which bot is this?"],
             "responses": ["I'm a virtual assistant developed for and by the Computer Science Department and I'm here to help you."]
         },
         {
@@ -68,12 +68,122 @@
         {
             "tag": "enroll",
             "patterns": ["How can I enroll?", "How can I join?", "How can I register?", "How can I sign up?"],
-            "responses": ["You can enroll by visiting https://apps.knust.edu.gh/admissions/]"]
+            "responses": ["You can enroll by visiting https://apps.knust.edu.gh/admissions/"]
         },
         {
             "tag": "contact",
-            "patterns": ["How can I contact you?", "How can I get in touch?", "How can I reach you?", "How can I call you?"],
+            "patterns": ["How can I contact you?", "How can I get in touch?", "How can I reach you?", "How can I call you?", "contact you"],
             "responses": ["You can contact us by calling on 1234567890 or by emailing us at"]
+        },
+        {
+            "tag":"student_portal",
+            "patterns":["How can I access the student portal?", "student portal", "how can I login to the student portal", "how can I visit the student portal"],
+            "responses":["Visit https://apps.knust.edu.gh/students"]
+        },
+        {
+            "tag":"Tabari Linus",
+            "patterns":["Who is Tabari Linus?", "Tabari Linus", "TA Linus", "TA Tabari Linus", "TA tabari"],
+            "responses":["Tabari Linus is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0544187765"]
+        },
+        {
+            "tag":"Ephraim Abotsi",
+            "patterns":["Who is Ephraim Abotsi?", "Ephraim Abotsi", "TA Ephraim Abotsi", "TA Abotsi"],
+            "responses":["Ephraim Abotsi is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0244864985"]
+        },
+        {
+            "tag":"Bright Selby",
+            "patterns":["Who is Bright Selby?", "Bright Selby", "TA Bright Selby", "TA Selby", "TA bright"],
+            "responses":["Bright Selby is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0501383351"]
+        },
+        {
+            "tag":"Yeboah Godfred",
+            "patterns":["Who is Yeboah Godfred?", "Yeboah Godfred", "TA Yeboah Godfred", "TA Godfred", "TA yeboah"],
+            "responses":["Yeboah Godfred is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0548077935"]
+        },
+        {
+            "tag":"Amehe Seth Mawuli Yaw",
+            "patterns":["Who is Amehe Seth Mawuli Yaw?", "Amehe Seth Mawuli Yaw", "TA Amehe Seth Mawuli Yaw", "TA Amehe", "TA Seth", "TA Mawuli", "TA Yaw"],
+            "responses":["Amehe Seth Mawuli Yaw is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0556182309"]
+        },
+        {
+            "tag": "Okpoti Eric",
+            "patterns": ["Who is Okpoti Eric?", "Okpoti Eric", "TA Okpoti Eric", "TA Okpoti", "TA Eric"],
+            "responses": ["Okpoti Eric is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0551515194"]
+        },
+        {
+            "tag":"Senyo Ebenezer",
+            "patterns":["Who is Senyo Ebenezer?", "Senyo Ebenezer", "TA Senyo Ebenezer", "TA Senyo", "TA Ebenezer"],
+            "responses":["Senyo Ebenezer is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0540662041"]
+        },
+        {
+            "tag":"Akoto Michael Appiah",
+            "patterns":["Who is Akoto Michael Appiah?", "Akoto Michael Appiah", "TA Akoto Michael Appiah", "TA Akoto Appiah" , "TA Michael Appiah", "TA Appiah"],
+            "responses":["Akoto Michael Appiah is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0243472977"]
+        },
+        {
+            "tag":"Nani Desmond",
+            "patterns":["Who is Nani Desmond?", "Nani Desmond", "TA Nani"],
+            "responses":["Nani Desmond is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0558466487"]
+        },
+        {
+            "tag":"Kwadwo Kusi",
+            "patterns":["Who is Kwadwo Kusi?", "Kwadwo Kusi", "TA Kwadwo Kusi", "TA Kusi", "TA Kwadwo"],
+            "responses":["Kwadwo Kusi is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0531849597"]
+        },  
+        {
+            "tag":"Obah Kwasi Loth",
+            "patterns":["Who is Obah Kwasi Loth?", "Obah Kwasi Loth", "TA Kwasi Obah", "TA Kwasi Loth", "TA Loth"],
+            "responses":["Obah Kwasi Loth is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0247268375"]
+        },
+        {
+            "tag":"Soglo-Ahianyo Elisha",
+            "patterns":["Who is Soglo-Ahianyo Elisha?", "Soglo-Ahianyo Elisha", "TA Soglo-Ahianyo", "TA Elisha", "TA Soglo"],
+            "responses":["Soglo-Ahianyo Elisha is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0503723770"]
+        },
+        {
+            "tag":"Asiedu Agyekum David",
+            "patterns": ["Who is Asiedu Agyekum David?", "Asiedu Agyekum David", "TA Asiedu Agyekum", "TA David", "TA Asiedu"],
+            "responses": ["Asiedu Agyekum David is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0555853964"]
+        },
+        {
+            "tag":"Franklin Agyekum",
+            "patterns":["Who is Franklin Agyekum?", "Franklin Agyekum", "TA Franklin Agyekum", "TA Franklin"],
+            "responses":["Franklin Agyekum is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0242923964"]
+        },
+        {
+            "tag":"Kusi-Appiah Solomon",
+            "patterns":["Who is Kusi-Appiah Solomon?", "Kusi-Appiah Solomon", "TA Kusi-Appiah", "TA Solomon"],
+            "responses":["Kusi-Appiah Solomon is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0578582011"]
+        },
+        {
+            "tag":"Hoke Ishamel",
+            "patterns":["Who is Hoke Ishamel?", "Hoke Ishamel", "TA Hoke Ishamel", "TA Hoke", "TA Ishamel"],
+            "responses":["Hoke Ishamel is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0501313018"]
+        },
+        {
+            "tag":"Boadu-Acheampong Samuel",
+            "patterns":["Who is Boadu-Acheampong Samuel?", "Boadu-Acheampong Samuel", "TA Boadu-Acheampong", "TA Samuel Boadu"],
+            "responses":["Boadu-Acheampong Samuel is a Teaching Assistant at the Computer Science Department of KNUST. You can contact him on 0501311813"]
+        },
+        {
+            "tag":"Dean",
+            "patterns":["Who is the dean of the computational sciences?", "dean", "dean of the department", "Dean of faculty of physical sciences"],
+            "responses":["The dean of the Computer Science Department is Prof. Osei Akoto (Physical and Computational Sciences). You can contact him on 0244333333 or email him at oteekow@gmail.com"]
+        },
+        {
+            "tag":"Provost",
+            "patterns":["Who is the Provost of the College of Science?", "Provost", "Provost of the College of Science", "Provost of the College", "Amekudzi", "Leonard Amekudzi"],
+            "responses":["The Provost of the College of Science is Prof. Leonard K. Amekudzi (College of Science). You can contact him on 0244333333 or email him at oteekow@gmail.com"]
+        },
+        {
+            "tag": "head_of_department",
+            "patterns": ["Who is the head of the Computer Science Department?", "HOD for computer science", "head of the department", "head of the Computer Science Department", "HOD ", "Hayfron-Acquah", "J.B Hayfron-Acquah"],
+            "responses": ["The head of the Computer Science Department is Prof. J.B Hayfron-Acquah. You can contact him on 0244506372, email him at jbha@yahoo.com or visit his office at FF22 at the Science Block"]
+        },
+        {
+            "tag":"Graduate Assistant",
+            "patterns":["Who is a Graduate Assistant?", "Graduate Assistant", "GA", "Graduate Assistant at the Computer Science Department", "Graduate Assistant at the Department", "Eric Agyekum"],
+            "responses":["Eric Agyekum is currently the only Graduate Assistant at the Computer Science Department. You can contact him on 0244333333 or email him at oteekow@gmail.com"]
         },
         {
             "tag": "noanswer",
