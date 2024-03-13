@@ -8,7 +8,7 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 
 lemmatizer = WordNetLemmatizer()
-file_path = "https://github.com/KNUST-CS-CHATBOT-AIGROUP7/chatbot_backend/blob/2741aeb390f4dd9a8bd2290d979ee14b44e15e4c/chatbot/dept_data/intents.json"
+file_path = "C:\\Users\\Owusu-Turkson\\Documents\\GitHub\\chatbot_backend\\chatbot\\dept_data\\intents.json"
 
 try:
     with open(file_path) as file:
