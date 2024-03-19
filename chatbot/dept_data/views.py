@@ -49,7 +49,7 @@ class Files:
     def predict_class (self, sentence):
         bow = self.bag_of_words (sentence)
         res = model.predict(np.array([bow]))[0]
-        ERROR_THRESHOLD = 0.25
+        ERROR_THRESHOLD = 0.2
         results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
 
         results.sort(key=lambda x: x[1], reverse=True)
@@ -75,8 +75,7 @@ class Chatbot(APIView):
            self.files = Files() # create an instance of the Files class to use its methods
 
        def get(self, request):
-           
-           return redirect("")
+           return redirect("/")
 
        def post(self, request):
            data = request.data["user"]
@@ -85,5 +84,5 @@ class Chatbot(APIView):
            print(data)
            ints = self.files.predict_class(data)
            res = self.files.get_response (ints, intents)
-           return HttpResponse(res)
+           return HttpResponse(json.dumps(res))
         #    return HttResponse(json.dumps(data))

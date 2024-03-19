@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_5(h(2u8zc29n45n(e+5e!gds012awqpl0p-5!8)*0(%$%!ylp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -81,6 +81,7 @@ DATABASES = {
     }
 }
 
+APPEND_SLASH=False
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
